@@ -1,7 +1,7 @@
 from ursina import *
 
 
-class Inventory(Entity):
+class Game(Entity):
     def __init__(self, **kwargs):
         super().__init__(
             parent = camera.ui,
@@ -93,11 +93,12 @@ class Inventory(Entity):
 
 
 if __name__ == '__main__':
+    print("game started")
     app = Ursina()
-    inventory = Inventory()
+    game = Inventory()
 
     def add_item():
-        inventory.append(random.choice(('bag', 'bow_arrow', 'gem', 'orb', 'sword')))
+        game.append(random.choice(('bag', 'bow_arrow', 'gem', 'orb', 'sword')))
 
     add_item()
     add_item()
