@@ -5,7 +5,7 @@ to make as it looks.
 You'll have to do some sort of chunking of the world and generate a combined mesh
 instead of separate blocks if you want it to run fast. You can use the Mesh class for this.
 You can then use blocks with colliders like in this example in a small area
-around the player so you can interact with the world.
+around but the player so you can interact with the world.
 '''
 
 from ursina import *
